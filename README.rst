@@ -46,6 +46,9 @@ Both run from source and command line have same parameters::
 Change log
 ==========
 
+0.2.03 (2021-01-07)
+ * fixed: get_photos_in_set no longer crashes on numeric video size label (#1)
+
 0.2.02 (2017-02-11)
  * added --fix-missing-description option (thanks jruusu)
  * added --dry-run option (thanks jruusu)
