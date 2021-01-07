@@ -123,7 +123,7 @@ class Remote(object):
                         if sizes['stat'] != 'ok':
                             continue
 
-                        original = filter(lambda s: s['label'].startswith('Video Original') and s['media'] == 'video', sizes['sizes']['size'])
+                        original = filter(lambda s: isinstance(s['label'], basestring) and s['label'].startswith('Video Original') and s['media'] == 'video', sizes['sizes']['size'])
                         if original:
                             photos[title] = original.pop()['source']
                             
